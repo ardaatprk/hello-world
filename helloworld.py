@@ -1,7 +1,5 @@
 class ClassAsal :
-    def __init__(self) -> None:
-        pass
-    def asalSayilariBul(sayi1, sayi2):  
+    def asalSayilariBul(self, sayi1, sayi2):  
      for sayi in range(sayi1, sayi2+1):
         if sayi > 1:
             for i in range(2, sayi):
@@ -14,4 +12,6 @@ if __name__== '__main__':
     print("Asal Sayilar")
     sayi1 = int(input('sayi 1:'))
     sayi2 = int(input('sayi 2:'))
-    asalSayilariBul(sayi1, sayi2)
+    p1 = ClassAsal()
+
+    p1.asalSayilariBul(sayi1, sayi2)
